@@ -272,6 +272,10 @@ body {
     font-family: Arial;
 }
 
+.column p, h4 {
+	color: black;
+}
+
 
 
 /*************************************
@@ -448,6 +452,10 @@ footer {background: white; color: black; font-family: Arial, "Helvetica Neue", H
   width:100%;
 margin: 0 auto;
  overflow: hidden;
+}
+
+#contact p {
+	color: white;
 }
 
 	.fa {

@@ -804,6 +804,9 @@ margin: 0 auto;
  overflow: hidden;
 }
 
+#contact p {
+	color: white;
+}
 	.fa {
 	  padding: 10px;
 	  font-size: 30px;
