@@ -897,8 +897,10 @@ footer MOBILE
        float: none;
        width:100%;
 	   text-align: center;
+	   color: white;
     }
+	.col p {
+		color: white;
+	}
 }
 
-.hero-text_mobile {
-}
