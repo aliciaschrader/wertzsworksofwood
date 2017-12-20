@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home | Wertz's Works of Wood</title>
+	<meta name="description" content="Wertz's Works of Wood sells one of a kind pieces.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/www.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+
+		  // Store hash
+		  var hash = this.hash;
+
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+		
+		/**Mobile Navigation Javascript**/
+$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+		
+		
+    
+	</script>
+</head>
+
+<body class="shopbody">
+<!---------------------------------------------------------------------------------------------------
+NAVIGATION MOBILE
+---------------------------------------------------------------------------------------------------->
+<div class="mobilenavigation">
+<div class="navmobile">
+  <a class="navlogo" href="index.html"><img src="images/other/wertz_logo_white_horizontal_nav.png" style="width:200px;"></a>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+  <ul>
+	  <a href="#aboutmobile"><h3>ABOUT</h3></a>
+	  <a href="#shop"><h3>SHOP</h3></a>
+	  <a href="#holidayitems"><h3>HOLIDAY</h3></a>
+	  <a href="#getintouch"><h3>CONTACT</h3></a>
+  </ul>
+</div>
+</div> 
+<!---------------------------------------------------------------------------------------------------
+NAVIGATION DESKTOP & TABLET
+---------------------------------------------------------------------------------------------------->
+ 	  <div class="navbar">
+  	  <div class="navfloarleft">
+	  <a href="index.html"><img src="images/other/wertz_logo_white_horizontal_nav.png" style="width:70%;"></a>
+	  </div>
+	  <div class="navfloatright">
+	  <a href="#about"><h3>ABOUT</h3></a>
+	  <a href="#shop"><h3>SHOP</h3></a>
+	  <a href="#holidayitems"><h3>HOLIDAY</h3></a>
+	  <a href="#process"><h3>PROCESS</h3></a>
+	  <a href="#getintouch"><h3>CONTACT</h3></a>
+	  </div>
+	</div>
+	
+<!---------------------------------------------------------------------------------------------------
+HERO IMAGE
+---------------------------------------------------------------------------------------------------->	
+<div class="heroimage">
+	<img src="images/other/woodshop.png" alt="Shop" style="width:100%;" >
+	<div class="hero-text">
+		<h1 class="herotext">Welcome</h1>
+		<br>
+		<p class="herotext">Here at Wertz's Works of Wood, we work wood for you!</p>
+		<p class="herotext">Enjoy browsing through my already made <a href="shop.html">products</a> or reach out for <a href="#getintouch"> custom orders</a>! I'd love to hear from you.</p>
+	</div>
+	<div class="herotext_mobile">
+		<h1>Welcome</h1>
+		<p>Here at Wertz's Works of Wood, we work wood for you!</p>
+	</div>
+</div>	
+<!---------------------------------------------------------------------------------------------------
+ABOUT & MEET STEVE
+---------------------------------------------------------------------------------------------------->
+<div id="aboutmobile">
+	<img class="aboutmobileimage" src="images/other/about_mobile.png">
+	<div class="aboutmobiletext">
+		<h1>ABOUT</h1>
+		<p>Wertz’s Works of Wood was formally created May 13, 1995.  Initially I did the craft show circuit but now I exclusively build custom and commissioned pieces. Functional and aesthetically pleasing pieces is what I try to attain, utilizing “up cycled” material where I can.</p>
+	</div>
+</div>
+
+<div id="about">
+	<img class="aboutimage" src="images/other/aboutimage.png">
+	<div class="about_text">
+		<h1>ABOUT</h1>
+		<p>Wertz’s Works of Wood was formally created May 13, 1995.  Initially I did the craft show circuit but now I exclusively build custom and commissioned pieces. Functional and aesthetically pleasing pieces is what I try to attain, utilizing “up cycled” material where I can.</p>
+	</div>
+</div>
+
+<div class="meetstevemobile">
+	<img class="meetstevemobile_image" src="images/other/meetsteve_mobile.png" alt="Logo" style="width:100%">
+	<div class="meetstevemobile_text">
+		<h1>MEET STEVE</h1>
+		<p>Born and raised in the small (pop. 262) Pennsylvania town of Mann’s Choice and since 2005 I have lived in sunny Florida. I gravitated toward making things at an early age and using wood as the medium was a natural progression due to its abundance in the Pennsylvania forests. My passion is to take material that is destined for the landfill and to turn it into an heirloom that can be handed down for generations to come.</p>
+	</div>
+</div>
+
+<div class="meetsteve">
+	<img class="aboutimage" src="images/other/meetsteveimage.png" alt="Logo" style="width:100%">
+	<div class="meetsteve_text">
+		<h1>MEET STEVE</h1>
+		<p>Born and raised in the small (pop. 262) Pennsylvania town of Mann’s Choice and since 2005 I have lived in sunny Florida. I gravitated toward making things at an early age and using wood as the medium was a natural progression due to its abundance in the Pennsylvania forests. My passion is to take material that is destined for the landfill and to turn it into an heirloom that can be handed down for generations to come.</p>
+	</div>
+</div>
+
+
+<!-------------------------------------------------------------------------
+SHOP BY CATEGORIES
+-------------------------------------------------------------------------->
+<div id="shop">
+<div class="steveswork">
+	<h1>STEVE'S WORK</h1>
+	<p>Shop by categories below or view all pieces by clicking the button below:</p>
+	<a href="shop.html">
+	<button class="whitebutton"><h3>VIEW ALL</h3></button>
+	</a>
+</div>
+ 
+<div class="shopbycategories">
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_chair.png" alt="Chair" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text"><h3>CHAIRS</h3></div>
+		</div>
+	</div>
+	</a>
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_box.png" alt="Glass Topped Humidor" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text"><h3>GLASS TOPPED HUMIDORS</h3></div>
+		</div>
+	</div>
+	</a>
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_table.png" alt="Table" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text"><h3>TABLES</h3></div>
+		</div>
+	</div>
+	</a>
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_shelf.png" alt="Shelf" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text"><h3>SHELVES</h3></div>
+		</div>
+	</div>
+	</a>
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_cuttingboard.png" alt="Cutting Board" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text">
+			  <h3>CUTTING BOARDS</h3>
+			</div>
+		</div>
+	</div>
+	</a>
+	<a href="shop.html">
+	<div class="item">
+		<img src="images/shopbycategories/cat_holiday.png" alt="Seasonal" class="itemimage" style="width:100%">
+		<div class="middle">
+			<div class="text"><h3>SEASONAL</h3></div>
+		</div>
+	</div>
+	</a>
+</div>
+
+<div class="shopbycategories_tablet">
+  <a href="shop.html">
+   <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_chair.png" alt="Chair Image" style="width:100%">
+      <div class="cat_title">
+        <h3>CHAIRS</h3>
+      </div>
+    </div>
+  </div>
+  </a>
+  <a href="shop.html">
+    <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_box.png" alt="Glass Top Humidor Image" style="width:100%">
+      <div class="cat_title">
+        <h3 id="humidor_tablet">GLASS TOP HUMIDORS</h3>
+        <h3 id="humidor_mobile">HUMIDORS</h3>
+      </div>
+    </div>
+  </div>
+</a>
+   <a href="shop.html">
+    <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_table.png" alt="Table Image" style="width:100%">
+      <div class="cat_title">
+        <h3>TABLES</h3>
+      </div>
+    </div>
+  </div>
+    <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_shelf.png" alt="Shelf Image" style="width:100%">
+      <div class="cat_title">
+        <h3>SHELVES</h3>
+      </div>
+    </div>
+  </div>
+	</a>
+   <a href="shop.html">
+    <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_cuttingboard.png" alt="Cutting Board Image" style="width:100%">
+      <div class="cat_title">
+        <h3>CUTTING BOARDS</h3>
+      </div>
+    </div>
+  </div>
+	</a>
+   <a href="shop.html">
+    <div class="cat_column">
+    <div class="card">
+      <img src="images/shopbycategories/cat_holiday.png" alt="Nativity Image" style="width:100%">
+      <div class="cat_title">
+        <h3>SEASONAL</h3>
+      </div>
+    </div>
+  </div>
+	</a>
+</div>
+
+<!-------------------------------------------------------------------------
+HOLIDAY ITEMS
+-------------------------------------------------------------------------->
+<a href="shop.html">
+<div id="holidayitems">
+	<img src="images/holiday/holidayitems.png" width="100%;" >
+	<div id="holidaytext">
+		<h1>HOLIDAY ITEMS!</h1>
+		<p>Celebrate the Holiday Season with some beautiful handmade items. Also, items, like cutting boards, make great gift ideas (hint hint)!</p>
+		<button class="whitebutton"><h4>VIEW ITEMS</h4></button>
+	</div>
+</div>
+</a>
+<!-------------------------------------------------------------------------
+PROCESS
+-------------------------------------------------------------------------->
+
+<div id="process" width="100%">
+	<img class="aboutimage" src="images/process/process.png" width="100%;">
+	<div id="processtext">
+		<h1>THE PROCESS</h1>
+		<p>My first priority is to utilize materials that are available, be it new stock or previously utilized materials. Most of this "new" stock has come from the family farm. In my custom orders, I use what the clients request. If you are unsure of what might work best, I will make suggestions both in design and materials. My goal is to balance form and function while giving you everything you requested. Next comes the construction phase where I use both hand tools and machinery. I use techniques that will ensure your furniture will last generations. The final step is the finishing process which can range from my special oil/wax finish to the more durable conversion lacquer finish depending on the project. Now the best part comes when you receive your finished piece and can look forward to many years of enjoyment!</p>
+	</div>
+</div>
+
+<!-------------------------------------------------------------------------
+LET'S GET IN TOUCH
+-------------------------------------------------------------------------->
+<div id="getintouch" width="100%">
+	<h1>LET'S GET IN TOUCH</h1>
+	<p><strong>We work wood for you!</strong></p>
+	<p><strong>Custom order?</strong> I'd love to! Contact me with what you're thinking and let's create something <strong>special</strong>.</p>
+</div>
+
+<!-------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------->
+
+           <div id="contact">
+               <div class="col col1">
+                   <h3>CONTACT</h3>
+                   <p>(727) 993-9046</p>
+                   <a id="email" href="mailto:drstevewertz@gmail.com?Subject=Hello%20again" target="_top">drstevewertz@gmail.com</a>
+               </div>
+               <div class="col col2">
+                   <h3>LOCATION</h3>
+                 <p>Located in beautiful New Port Richey, Florida.</p>
+               </div>
+               <div class="col col3">
+				<h3 id="socialmediaheading">SOCIAL MEDIA</h3>
+						<div class="social-media">
+							<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+			   </div>
+           </div>
+       
+ <!-------------------------------------------------------------------------
+COPYRIGHT
+-------------------------------------------------------------------------->
+        <footer>
+          	<!-- PayPal Logo -->
+        	<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" alt="PayPal Acceptance Mark" width="200" border="0"></a></td></tr></table>
+        	<!-- PayPal Logo -->
+			<p>&copy; 2017 | Wertz's Works of Wood <br><br> Website Design & Development by <a href="https://aliciaschrader.com"><strong>Alicia Schrader</strong></a></p>
+        </footer>
+
+</body>
+</html>

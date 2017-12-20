@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>Shop | Wertz's Works of Wood</title>
+	<meta name="description" content="Wertz's Works of Wood sells one of a kind pieces.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/shop.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+			/**Mobile Navigation Javascript**/
+$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+</script>
+</head>	
+
+<header>
+	<!---------------------------------------------------------------------------------------------------
+NAVIGATION MOBILE
+---------------------------------------------------------------------------------------------------->
+<div class="mobilenavigation">
+<div class="navmobile">
+  <a class="navlogo" href="index.html"><img src="images/other/wertz_logo_white_horizontal_nav.png" style="width:200px;"></a>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+  <ul>
+	  <a href="index.html"><h3>ABOUT</h3></a>
+	  <a href="shop.html"><h3>SHOP</h3></a>
+	  <a href="index.html"><h3>HOLIDAY</h3></a>
+	  <a href="index.html"><h3>CONTACT</h3></a>
+  </ul>
+</div>
+</div> 
+<!---------------------------------------------------------------------------------------------------
+NAVIGATION DESKTOP & TABLET
+---------------------------------------------------------------------------------------------------->
+ 	  <div class="navbar">
+  	  <div class="navfloarleft">
+	  <a href="index.html"><img src="images/other/wertz_logo_white_horizontal_nav.png" style="width:70%;"></a>
+	  </div>
+	  <div class="navfloatright">
+	  <a href="index.html"><h3>ABOUT</h3></a>
+	  <a href="shop.html"><h3>SHOP</h3></a>
+	  <a href="index.html"><h3>HOLIDAY</h3></a>
+	  <a href="index.html"><h3>PROCESS</h3></a>
+	  <a href="index.html"><h3>CONTACT</h3></a>
+	  </div>
+	</div>
+</header>
+
+<body>
+	
+<!---------------------------------------------------------------------------------------------------
+SHOPPING
+---------------------------------------------------------------------------------------------------->
+
+		<!-- MAIN (Center website) -->
+	<div class="main">
+	  <h1>SHOP ALL</h1>
+	  <hr>
+	  <h3>View all products or use the buttons below to narrow your search:</h3>
+	  <div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')"> Shop all</button>
+	  <button class="btn" onclick="filterSelection('chairs')"> Chairs</button>
+	  <button class="btn" onclick="filterSelection('humidors')"> Humidors</button>
+	  <button class="btn" onclick="filterSelection('tables')"> Tables</button>
+	  <button class="btn" onclick="filterSelection('shelves')"> Shelves</button>
+	  <button class="btn" onclick="filterSelection('cuttingboards')"> Cutting boards</button>
+	  <button class="btn" onclick="filterSelection('seasonal')"> Seasonal</button>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	  <div class="column chairs">
+	  <a href="titanicchair.html">
+		<div class="content">
+		  <img src="images/shop/chairs/titanic_deck_chair/titanic_deck_chair_main.png" alt="Titanic Deck Chair" style="width:100%">
+		  <h4>Titanic Deck Chair</h4>
+		  <p>$1,100</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column chairs">
+	  <a href="shakerstylerocker.html">
+		<div class="content">
+		<img src="images/shop/chairs/shaker_style_rocker/shaker_style_rocker_main.png" alt="Shaker Style Rocker" style="width:100%">
+		  <h4>Shaker Style Rocker</h4>
+		  <p>$350</p>
+		</div>
+		</a>
+	  </div>
+	  
+	  <div class="column humidors">
+	  <a href="walnuthumidor.html">
+		<div class="content">
+		<img src="images/shop/humidors/walnut_humidor/walnut_humidor_main.png" alt="Walnut Humidor" style="width:100%">
+		  <h4>Walnut Humidor</h4>
+		  <p>$325</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column humidors">
+	  <a href="tigerstrippedhumidor.html">
+		<div class="content">
+		<img src="images/shop/humidors/tiger_stripped_maple_humidor/tiger_stripped_maple_humidor_main.png" alt="Tiger Stripped Maple Humidor" style="width:100%">
+		  <h4>Tiger Stripped Maple Humidor</h4>
+		  <p>$325</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column humidors">
+	  <a href="cherryhumidor.html">
+		<div class="content">
+		<img src="images/shop/humidors/cherry_humidor/cherry_humidor_main.png" alt="Cherry Humidor" style="width:100%">
+		  <h4>Cherry Humidor</h4>
+		  <p>$325</p>
+		</div>
+		</a>
+	  </div>
+  
+	  <div class="column tables">
+	  <a href="roundtoptable.html">
+		<div class="content">
+		  <img src="images/shop/tables/round_top_table/round_top_table_main.png" alt="Round Top Table" style="width:100%">
+		  <h4>Round Top Table</h4>
+		  <p>$1,200</p>
+		</div>
+		</a>
+	  </div>
+	  
+	  <div class="column shelves">
+	  <a href="canoeshelf.html">
+		<div class="content">
+		<img src="images/shop/shelves/walnut_canoe_shelf/walnut_canoe_shelf_main.png" alt="Walnut Canoe Shelf" style="width:100%">
+		  <h4>Walnut Canoe Shelf</h4>
+		  <p>$125</p>
+		</div>
+	   </a>
+	  </div>
+	  
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard1.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_1/cutting_board_1_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		 </a>
+	  </div>
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard6.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_6/cutting_board_6_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard2.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_2/cutting_board_2_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard3.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_3/cutting_board_3_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard4.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_4/cutting_board_4_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column cuttingboards">
+	  <a href="cuttingboard5.html">
+		<div class="content">
+		<img src="images/shop/cutting_boards/cutting_board_5/cutting_board_5_main.png" alt="Cutting Board" style="width:100%">
+		  <h4>Cutting Board</h4>
+		  <p>$100</p>
+		</div>
+		</a>
+	  </div>
+
+	  <div class="column seasonal">
+	  <a href="lightboxfall.html">
+		<div class="content">
+		  <img src="images/shop/light_boxes/fall_light_box/fall_light_box_main.png" alt="Fall Leaves Light Box" style="width:100%">
+		  <h4>Fall Leaves Light Box</h4>
+		  <p>$20</p>
+		</div>
+	   </a>
+	  </div>
+	  <div class="column seasonal">
+	  <a href="lightboxwinter.html">
+		<div class="content">
+		<img src="images/shop/light_boxes/winter_light_box/winter_light_box_main.png" alt="Grape Light Box" style="width:100%">
+		  <h4>Grape Light Box</h4>
+		  <p>$20</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column seasonal">
+	  <a href="tabletopnativity.html">
+		<div class="content">
+		<img src="images/shop/seasonal/nativity/nativity_main.png" alt="Tabletop Nativity Set" style="width:100%">
+		  <h4>Tabletop Nativity Set</h4>
+		  <p>$425</p>
+		</div>
+		</a>
+	  </div>
+	  <div class="column seasonal">
+	  <a href="santaangels.html">
+		<div class="content">
+		<img src="images/shop/seasonal/santa_angels/santa_angels_main.png" alt="Santa Angels with 3 Candles" style="width:100%">
+		  <h4>Santa Angels with 3 Candles</h4>
+		  <p>$425</p>
+		</div>
+		</a>
+	  </div>
+	<!-- END GRID -->
+	</div>
+
+	<!-- END MAIN -->
+</div>
+
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("column");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+
+
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
+	}
+	</script>
+
+<!-------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------->
+
+           <div id="contact">
+               <div class="col col1">
+                   <h3>CONTACT</h3>
+                   <p>(727) 993-9046</p>
+                   <a id="email" href="mailto:drstevewertz@gmail.com?Subject=Hello%20again" target="_top">drstevewertz@gmail.com</a>
+               </div>
+               <div class="col col2">
+                   <h3>LOCATION</h3>
+                 <p>Located in beautiful New Port Richey, Florida.</p>
+               </div>
+               <div class="col col3">
+				<h3 id="socialmediaheading">SOCIAL MEDIA</h3>
+						<div class="social-media">
+							<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+			   </div>
+           </div>
+       
+ <!-------------------------------------------------------------------------
+COPYRIGHT
+-------------------------------------------------------------------------->
+        <footer>
+          	<!-- PayPal Logo -->
+        	<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" alt="PayPal Acceptance Mark" width="200" border="0"></a></td></tr></table>
+        	<!-- PayPal Logo -->
+			<p>&copy; 2017 | Wertz's Works of Wood <br><br> Website Design & Development by <a href="https://aliciaschrader.com"><strong>Alicia Schrader</strong></a></p>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/****************************************************************************
+*****************************************************************************
+MAIN
+*****************************************************************************
+*****************************************************************************/
+/*Breadcrumb*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #72584c;
+    text-decoration: underline;
+}
+
+/*Main*/
+body {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #72584c;
+}
+/*************************************
+main DESKTOP
+*************************************/
+@media only screen and (min-width : 1280px){
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 48px;
+		line-height: 1.05em;
+	}
+	h2 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 36px;
+		line-height: 1.25em;
+	}
+	h3 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 28px;
+		line-height: 1.25em;
+	}
+	h4 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 22px;
+	}
+	p {
+		font-family: 'Quattrocento', serif;
+		font-size: 16px;
+		line-height: 1.375em;
+	}
+	
+}
+
+
+/*************************************
+main TABLET
+*************************************/
+@media only screen and (min-width : 768px ){
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 40px;
+		line-height: 1.125em;
+	}
+	h2 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 32px;
+		line-height: 1.25em;
+	}
+	h3 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 24px;
+		line-height: 1.25em;
+	}
+	p {
+		font-family: 'Quattrocento', serif;
+		font-size: 16px;
+		line-height: 1.375em;
+	}
+}
+
+
+/*************************************
+main MOBILE
+*************************************/
+@media only screen and (max-width : 767px) {
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 32px;
+		line-height: 1.25em;
+	}
+	h2 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 26px;
+		line-height: 1.15384615em;
+	}
+	h3 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 22px;
+		line-height: 1.13636364em;
+	}
+	p {
+		font-family: 'Quattrocento', serif;
+		font-size: 16px;
+		line-height: 1.25em;
+	}
+}
+
+/****************************************************************************
+*****************************************************************************
+NAVIGATION
+*****************************************************************************
+*****************************************************************************/
+body {margin:0;}
+
+/*************************************
+navigation MOBILE
+*************************************/
+@media only screen and (max-width : 904px) {
+	.navbar {
+		display: none;
+	}
+	.mobilenavigation {
+		position: fixed;
+		width: 100%;
+		z-index:200;
+	}
+	.navmobile{
+	width:100%; 
+	background:#333; 
+	height:90px;
+	padding-top: 15px;
+	padding-left: 15px;
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:15px;
+  right:15px;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:white;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:15px;
+  right:15px;
+  padding:7px 15px 0px 15px;
+  color:white;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{
+	z-index:1000000; 
+	font-weight:bold; 
+	font-size:0.8em; 
+	width:100%; 
+	background:#f1f1f1;  
+	position:absolute; 
+	text-align:center; 
+	font-size:12px;
+	}
+.menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none;
+	}
+.menu li {
+	display: block;   
+	padding:15px 0 15px 0; 
+	border-bottom:#dddddd 1px solid;
+	}
+.menu li:hover{
+	display: block;    
+	background:#ffffff; 
+	padding:15px 0 15px 0; 
+	border-bottom:#dddddd 1px solid;
+	}
+.menu ul li a { 
+	text-decoration:none; 
+	margin: 0px; 
+	color:#666;
+	}
+.menu ul li a:hover {  
+	color: #666; 
+	text-decoration:none;
+	}
+.menu a{
+	text-decoration:none; 
+	color:#666;
+	}
+.menu a:hover{
+	text-decoration:none; 
+	color:#666;
+	}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+}
+
+/*************************************
+navigation DESKTOP & TABLET
+*************************************/
+@media only screen and (min-width : 904px) {
+ /* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+	padding: 30px 30px 10px 30px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	z-index: 10;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+	color: #72584c;
+}
+
+.navfloatleft {
+	float: left;
+}
+
+.navfloatright {
+	float: right;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+}
+/****************************************************************************
+*****************************************************************************
+ITEM
+*****************************************************************************
+*****************************************************************************/
+body,html,h1,h2,p, div,a,img,header,footer,span{
+    margin: 0;
+    padding: 0;
+}
+
+* {box-sizing:border-box}
+
+/*************************************
+hero image DESKTOP & TABLET
+*************************************/
+@media only screen and (min-width : 768px) {
+	.itemoverview {
+		padding-top:
+			85px;
+		}
+}
+
+/*************************************
+hero image MOBILE
+*************************************/
+@media only screen and (max-width : 768px) {
+	.itemoverview {
+		padding-top: 90px;
+	}
+}
+
+.itemoverview {
+ width:85%;
+ margin: 0 auto;
+ overflow: hidden;
+ padding-bottom: 30px;
+}
+
+.iteminformation {
+	width: 50%;
+    float: left;
+	padding: 0px 30px 0px 30px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.itemimages {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Remove bottom margin. Needed for some browsers */
+img {
+  margin-bottom: -4px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column3 {
+	float: left;
+	width: 33.333%;
+}
+
+.column4 {
+  float: left;
+  width: 25%;
+}
+
+.column5 {
+	float: left;
+	width: 20%;
+}
+
+.column6 {
+	float: left;
+	width: 16.6666667%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width : 767px) {
+	 .itemoverview {
+		 width:85%;
+		 margin: 0 auto;
+		 overflow: hidden;
+		 padding-bottom: 30px;
+		}
+
+	.iteminformation {
+		width: 100%;
+		float: left;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.itemimages {
+		position: relative;
+		width: 100%;
+	    float: left;
+	}
+}
+
+/****************************************************************************
+*****************************************************************************
+FOOTER
+*****************************************************************************
+*****************************************************************************/
+
+/*************************************
+footer DESKTOP
+*************************************/
+
+
+*{box-sizing:border-box}
+html{background:white;}
+footer {background: white; color: black; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; text-align: center; padding: 2em 0;}
+
+#contact{
+  clear: both;
+  width:100%;
+margin: 0 auto;
+ overflow: hidden;
+}
+
+	.fa {
+	  padding: 10px;
+	  font-size: 30px;
+	  width: 35px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+	  border-radius: 50%;
+	}
+
+	#email {
+		font-family: 'Quattrocento', serif;
+		font-size: 16px;
+		text-decoration: none;
+		color: white;
+	}
+
+	#email:hover {
+		color: #72584c;
+	}
+	.fa:hover {
+		color: #72584c;
+	}
+
+	.fa-facebook {
+	  background: black;
+	  color: white;
+	}
+
+
+	.fa-instagram {
+	  background: black;
+	  color: white;
+	}
+
+.col{
+    width: 33.333%;
+    height:250px;
+    float: left;
+    text-align: left;
+    padding:3rem;
+	color: white;
+	background: #333;
+}
+
+footer{
+    clear:both;
+}
+
+
+/*************************************
+footer TABLET
+*************************************/
+@media only screen and (max-width:768px){
+    .col1, .col2{
+        width:50%;
+    }
+    .col3{
+        width:100%;
+    }
+	
+	#socialmediaheading {
+		display: none;
+	}
+	
+	.social-media {
+		text-align: center;
+	}
+	
+	.col3 {
+		padding: 0rem;
+		height: 80px;
+		}
+	
+	.col1, .col2 {
+		height: 200px;
+	}
+}
+
+
+
+
+/*************************************
+footer MOBILE
+*************************************/
+@media only screen and (max-width:480px){
+    .col{
+       float: none;
+       width:100%;
+	   text-align: center;
+    }
+
+}
