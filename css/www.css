@@ -795,7 +795,7 @@ footer DESKTOP
 
 *{box-sizing:border-box}
 html{background:white;}
-footer {background: white; color: black; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; text-align: center; padding: 2em 0;}
+footer {text-align: center; padding: 2em 0;}
 
 #contact{
   clear: both;
